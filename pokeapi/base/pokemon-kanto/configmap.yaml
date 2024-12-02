@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: pokemon-cm
+  name: pokemon-kanto-cm
 data:
   API_URL: "http://google.fr"
   POKEDEX_NAME: "kanto"
