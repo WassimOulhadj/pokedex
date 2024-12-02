@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - image: pokeapi:0.1
-        name: pokemon-ui
+        name: pokemon-kanto
         ports:
         - containerPort: 3000
         env:
