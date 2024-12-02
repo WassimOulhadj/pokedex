@@ -7,4 +7,5 @@ resources:
 - deployment.yaml
 - svc.yaml
 - configmap.yaml
+- svc-kanto.yaml
 
