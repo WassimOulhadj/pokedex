@@ -3,7 +3,6 @@ kind: ConfigMap
 metadata:
   name: pokemon-johto-cm
 data:
-  API_URL: "http://google.fr"
   POKEDEX_NAME: "johto"
   POKEDEX_START_NUMBER: "152"
   POKEDEX_END_NUMBER: "386"

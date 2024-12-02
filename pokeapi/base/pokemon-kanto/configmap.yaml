@@ -3,7 +3,6 @@ kind: ConfigMap
 metadata:
   name: pokemon-kanto-cm
 data:
-  API_URL: "http://google.fr"
   POKEDEX_NAME: "kanto"
   POKEDEX_START_NUMBER: "1"
   POKEDEX_END_NUMBER: "151"
