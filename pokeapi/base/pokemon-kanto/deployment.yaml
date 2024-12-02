@@ -24,3 +24,18 @@ spec:
               configMapKeyRef:
                 name: pokemon-kanto-cm
                 key: API_URL
+          - name: POKEDEX_NAME
+            valueFrom:
+              configMapKeyRef:
+                name: pokemon-kanto-cm
+                key: POKEDEX_NAME
+          - name: POKEDEX_START_NUMBER
+            valueFrom:
+              configMapKeyRef:
+                name: pokemon-kanto-cm
+                key: POKEDEX_START_NUMBER
+          - name: POKEDEX_END_NUMBER
+            valueFrom:
+              configMapKeyRef:
+                name: pokemon-kanto-cm
+                key: POKEDEX_END_NUMBER
