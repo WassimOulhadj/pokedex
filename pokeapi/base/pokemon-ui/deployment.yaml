@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pokemon-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: pokemon-ui
+  template:
+    metadata:
+      labels:
+        app: pokemon-ui
+    spec:
+      containers:
+      - image: pokeapi:0.1
+        name: pokemon-ui
+        ports:
+        - containerPort: 3000
+        env:
+          - name: API_URL
+            valueFrom:
+              configMapKeyRef:
+                name: pokemon-cm
+                key: API_URL
